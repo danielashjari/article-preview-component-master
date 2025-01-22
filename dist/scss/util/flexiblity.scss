@@ -1,0 +1,17 @@
+//turning pixels into rem
+@function rem($pixels, $context: 16){
+    @return calc($pixels / $context)* 1rem;
+};
+
+//merging flex box attributes
+@mixin flex( $direction, $align){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+};
+
+@mixin grid-columns ($columns, $gap){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+};
