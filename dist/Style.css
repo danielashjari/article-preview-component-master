@@ -1,1 +1,78 @@
-/*# sourceMappingURL=Style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --body-bg: hsl(212, 23%, 69%);
+  --card-bg: hsl(210, 46%, 95%);
+  --h: hsl(217, 19%, 35%);
+  --p: hsl(214, 17%, 51%);
+}
+
+h1, h2, h3, p {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-top: 0rem;
+}
+
+h1, h2, h3 {
+  color: var(--h);
+}
+
+h3 {
+  font-size: 14px;
+}
+
+p {
+  color: var(--p);
+  font-weight: 300;
+  font-size: 10px;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+main {
+  margin: 6%;
+}
+main .card {
+  width: 100%;
+  background-color: var(--card-bg);
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+main .card img {
+  border-top-left-radius: 0.9375rem;
+  border-top-right-radius: 0.9375rem;
+}
+main .card .text-box {
+  margin: 1.875rem;
+}
+main .card .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 30px 30px 30px;
+}
+main .card .contact img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+main .card .contact .info {
+  margin: 0 5px 0 30px;
+}/*# sourceMappingURL=Style.css.map */

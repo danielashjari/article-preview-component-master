@@ -1,3 +1,4 @@
+@use '../util/' as *
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 h1,h2,h3,p {
@@ -10,6 +11,17 @@ h1,h2,h3,p {
 h1,h2,h3{
     color: var(--h);
 }
+
+@include breakpoint(small){
+    h3{
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+}
+
 
 p{
     color: var(--p);
