@@ -1,0 +1,16 @@
+@use '../util/' as * ;
+
+.btn{
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--btn-bg);
+    img{
+        width: rem(25);
+        height: rem(25);
+    }
+}
+
+.hidden{
+    display: none;
+    background-color: var(--share-bg);
+}

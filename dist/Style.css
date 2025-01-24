@@ -9,9 +9,11 @@ html {
 }
 
 :root {
-  --body-bg: hsl(212, 23%, 69%);
+  --body-bg: hsl(216, 33%, 85%);
+  --btn-bg: hsl(216, 33%, 85%);
   --card-bg: hsl(210, 46%, 95%);
   --h: hsl(217, 19%, 35%);
+  --share-bg: hsl(217, 19%, 35%);
   --p: hsl(214, 17%, 51%);
 }
 
@@ -26,14 +28,17 @@ h1, h2, h3 {
   color: var(--h);
 }
 
-h3 {
-  font-size: 14px;
+@media (min-width: ) {
+  h3 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 8%;
+  }
 }
-
 p {
   color: var(--p);
   font-weight: 300;
-  font-size: 10px;
 }
 
 a, a:visited, a:active {
@@ -66,13 +71,32 @@ main .card .contact {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin: 0 30px 30px 30px;
 }
-main .card .contact img {
+main .card .contact .profile {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
 }
 main .card .contact .info {
-  margin: 0 5px 0 30px;
+  margin: 0 5px 0 10px;
+}
+main .card .contact .info h3 {
+  margin-bottom: 0.3125rem;
+}
+
+.btn {
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--btn-bg);
+}
+.btn img {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.hidden {
+  display: none;
+  background-color: var(--share-bg);
 }/*# sourceMappingURL=Style.css.map */

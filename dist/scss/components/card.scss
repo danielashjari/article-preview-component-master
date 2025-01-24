@@ -16,14 +16,18 @@ main{
         }
         .contact{
             @include flex(row , center);
+            justify-content:space-between;
             margin: 0 30px 30px 30px;
-            img{
+            .profile{
                 border-radius: 50%;
                 width: rem(40);
                 height: rem(40);
             }
             .info{
-                margin: 0 5px 0 30px;
+                margin: 0 5px 0 10px;
+                h3{
+                    margin-bottom: rem(5);
+                }
             }
         }
     }
