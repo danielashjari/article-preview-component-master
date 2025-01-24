@@ -11,26 +11,26 @@ main{
         border-radius: rem(15);
         max-width: rem(450);
         @include flex(column , stretch);
-        .drawer{
+        .card-image{
             width: 100%;
             border-top-left-radius: rem(15) ;
             border-top-right-radius: rem(15) ;
         }
         
-        .container{
-            .text-box{
+        .card-element{
+            .card-text{
                 margin: rem(30);
             }
-            .contact{
+            .card-profile{
                 @include flex(row , center);
                 justify-content:space-between;
                 margin: 0 30px 30px 30px;
-                .profile{
+                .card-profile-name{
                     border-radius: 50%;
                     width: rem(40);
                     height: rem(40);
                 }
-                .info{
+                .card-profile-info{
                     margin: 0 5px 0 10px;
                     h3{
                         margin-bottom: rem(5);
@@ -47,13 +47,13 @@ main{
             flex-direction: row;
             max-width:max-content;
 
-            .drawer{
+            .card-image{
                 width:40%;
                 border-top-right-radius: 0;
                 border-bottom-left-radius: rem(15);
             }
         
-            .container{
+            .card-element{
                 @include flex(column, stretch);
                 justify-content: space-between;
             }
