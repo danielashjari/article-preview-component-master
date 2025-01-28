@@ -21,14 +21,12 @@ main{
             .card-text{
                 margin: rem(30);
             }
-            .card-profile{
+            .card-profile-info{
                 @include flex(row , center);
                 justify-content:space-between;
                 margin: 0 30px 30px 30px;
-                .card-profile-name{
+                .profile-image{
                     border-radius: 50%;
-                    width: rem(40);
-                    height: rem(40);
                 }
                 .card-profile-info{
                     margin: 0 5px 0 10px;

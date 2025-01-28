@@ -1,0 +1,13 @@
+@use '../util/' as*;
+.card-profile{
+
+    h4{
+        font-variant: small-caps;
+    }
+
+    .share-icon{
+        border-radius: 50%;
+        padding: rem(7);
+        background-color: var(--icon-bg);
+    }
+}
