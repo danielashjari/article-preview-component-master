@@ -1,8 +1,35 @@
 @use '../util/' as*;
+
 .card-profile{
+
+    .pop-up{
+        background-color: var(--share-bg);
+        width: rem(245);
+        align-items: center;
+        justify-content:space-between;
+        border-radius: rem(10);
+        padding:rem(10);
+        position: absolute;
+        left:77%;
+        top:45%;
+
+    }
+    
+    .share-container{
+        width: max-content;
+        .share-mobile{
+            width: max-content;
+            background-color: var(--share-bg);
+            align-items: center;
+            justify-content:space-between;
+
+        }
+    }
 
     h4{
         font-variant: small-caps;
+        color: white;
+        margin: 0%;
     }
 
     .share-icon{
@@ -11,3 +38,7 @@
         background-color: var(--icon-bg);
     }
 }
+
+.hidden{
+    display: none;
+};

@@ -130,13 +130,39 @@ main .card .card-element .card-profile-info .card-profile-info p {
   }
 }
 
+.card-profile .pop-up {
+  background-color: var(--share-bg);
+  width: 15.3125rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  position: absolute;
+  left: 77%;
+  top: 45%;
+}
+.card-profile .share-container {
+  width: max-content;
+}
+.card-profile .share-container .share-mobile {
+  width: max-content;
+  background-color: var(--share-bg);
+  align-items: center;
+  justify-content: space-between;
+}
 .card-profile h4 {
   font-variant: small-caps;
+  color: white;
+  margin: 0%;
 }
 .card-profile .share-icon {
   border-radius: 50%;
   padding: 0.4375rem;
   background-color: var(--icon-bg);
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
