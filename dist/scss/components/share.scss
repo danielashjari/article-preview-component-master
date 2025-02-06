@@ -11,6 +11,21 @@
         position: absolute;
         left: 75%;
         top: 290px;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -14px; /* Position the pointer below the popup */
+            left: 45%;
+            transform: translateX(-50%);
+            border-bottom: 15px solid var(--share-bg);
+            border-left: 13px solid rgba(0, 0, 0, 0);
+            border-right: 13px solid rgba(0, 0, 0, 0);
+            display: inline-block;
+            height: 0;
+            vertical-align: top;
+            width: 0;
+            transform: rotate(180deg);
+        }
     }
 
     .share-container {
