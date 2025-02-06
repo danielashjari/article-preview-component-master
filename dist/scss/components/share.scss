@@ -1,44 +1,50 @@
-@use '../util/' as*;
+@use "../util/" as *;
 
-.card-profile{
-
-    .pop-up{
+.card-profile {
+    .pop-up {
         background-color: var(--share-bg);
         width: rem(245);
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         border-radius: rem(10);
-        padding:rem(10);
+        padding: rem(10);
         position: absolute;
-        left:77%;
-        top:45%;
-
+        left: 77%;
+        top: 45%;
     }
-    
-    .share-container{
-        width: max-content;
-        .share-mobile{
-            width: max-content;
-            background-color: var(--share-bg);
-            align-items: center;
-            justify-content:space-between;
 
+    .share-container {
+        width: 100%;
+        height: rem(80);
+        background-color: var(--share-bg);
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px 15px 30px;
+        border-bottom-right-radius: rem(15);
+        border-bottom-left-radius: rem(15);
+        
+
+        .share-mobile {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
         }
     }
 
-    h4{
+    h4 {
         font-variant: small-caps;
-        color: white;
+        color: rgb(232, 232, 232);
         margin: 0%;
     }
 
-    .share-icon{
+    .share-icon {
         border-radius: 50%;
         padding: rem(7);
         background-color: var(--icon-bg);
     }
 }
 
-.hidden{
+.hidden {
     display: none;
-};
+}
