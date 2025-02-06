@@ -3,7 +3,6 @@ const shareIconMobile = document.getElementById("share-icon-mobile");
 const shareContainer = document.getElementById("share-container");
 const profileInfo = document.getElementById("profile-info");
 const desktopBar = document.getElementById("share-desktop");
-const mobileBar = document.getElementById("share-mobile");
 
 
 
