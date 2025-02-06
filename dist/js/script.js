@@ -1,8 +1,11 @@
 const shareIcon = document.getElementById("share-icon");
-const profileName = document.getElementById("profile-name");
-const profileImage = document.getElementById("profile-image");
+const shareIconMobile = document.getElementById("share-icon-mobile");
+const shareContainer = document.getElementById("share-container");
+const profileInfo = document.getElementById("profile-info");
 const desktopBar = document.getElementById("share-desktop");
 const mobileBar = document.getElementById("share-mobile");
+
+
 
 shareIcon.addEventListener("click", function () {
   if (window.innerWidth > 1024) {
@@ -12,22 +15,18 @@ shareIcon.addEventListener("click", function () {
       desktopBar.style.display = "none";
     }
   }
-
+  else if (window.innerWidth < 1024) {
+    shareContainer.style.display = "flex";
+    profileInfo.style.display = "none";
+  }
 
 })
 
-shareIcon.addEventListener("mouseover", function () {
+
+shareIconMobile.addEventListener("click", function () {
   if (window.innerWidth < 1024) {
-    if (mobileBar.style.display === "none") {
-      profileName.style.display = "none";
-      profileImage.style.display = "none";
-      mobileBar.style.display = "flex";
+    profileInfo.style.display = "flex";
+    shareContainer.style.display = "none";
 
-    } else {
-      profileName.style.display = "block";
-      profileImage.style.display = "block";
-      mobileBar.style.display = "none";
-    }
   }
-
 })
