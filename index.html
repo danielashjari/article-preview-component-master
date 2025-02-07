@@ -18,7 +18,7 @@
     <div class="card">
       <img src="./images/drawers.jpg" alt="image of a drawer" class="card-image">
 
-      <div class=" card-element">
+      <article class=" card-element">
         <div class="card-text">
           <h2>
             Shift the overall look and feel by adding these wonderful
@@ -48,25 +48,27 @@
               </p>
             </section>
 
-
-            <div class="share-desktop pop-up hidden" id="share-desktop">
-              <h4>share</h4>
-              <a href="https://www.facebook.com" aria-label="share on facebook">
-                <img src="./images/icon-facebook.svg" alt="Facebook logo" class=" icon icon-small facebook">
-              </a>
-                
-              <a href="https://www.twitter.com" aria-label="share on twitter">
-                <img src="./images/icon-twitter.svg" alt="Twitter logo" class=" icon icon-small twitter">
-              </a>
-
-              <a href="https://www.pinterest.com" aria-label="share on pinterest">
-                <img src="./images/icon-pinterest.svg" alt="Pinterest logo" class=" icon icon-small pinterest">
-              </a>
-
-            </div>
-
-            <img src="./images/icon-share.svg" alt="share icon" class="share-icon icon-medium icon" id="share-icon">
           </div>
+
+          <button
+            id="card__share-btn"
+            class="#"
+            aria-expanded="false"
+            aria-controls="card__social"
+            aria-label="Toggle Share Options">
+        
+              <svg
+                focusable="false"
+                aria-hidden="true"
+                class="#"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13">
+                <path
+                fill="#6E8098"
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+              </svg>
+          </button>
 
           <div class="share-container hidden" id="share-container">
             <div class="share-mobile" id="share-mobile">
@@ -84,12 +86,10 @@
               </a>
 
             </div>
-            <svg></svg>
-            <img src="./images/icon-share.svg" alt="share icon" class="share-icon icon-medium icon" id="share-icon-mobile">
           </div>
         </div>
 
-      </div>
+      </article>
 
     </div>
   </main>
