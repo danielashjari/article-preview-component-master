@@ -105,23 +105,26 @@ main .card .card-image {
 main .card .card-element .card-text {
   margin: 1.875rem;
 }
-main .card .card-element .card-profile-info {
+main .card .card-element .card-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+main .card .card-element .card-profile .card-profile-info {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0 30px;
+  margin: 10px 30px;
 }
-main .card .card-element .card-profile-info .profile-image {
+main .card .card-element .card-profile .card-profile-info .profile-image {
   border-radius: 50%;
 }
-main .card .card-element .card-profile-info .card-profile-info {
-  margin: 0 5px 0 10px;
-}
-main .card .card-element .card-profile-info .card-profile-info h3 {
+main .card .card-element .card-profile .card-profile-info h3 {
   margin-bottom: 0.3125rem;
 }
-main .card .card-element .card-profile-info .card-profile-info p {
+main .card .card-element .card-profile .card-profile-info p {
   margin-bottom: 0.3125rem;
 }
 @media (min-width: 64em) {
