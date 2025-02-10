@@ -1,40 +1,16 @@
 @use "../util/" as *;
 
 .card-profile {
-    /*.pop-up {
-        background-color: var(--share-bg);
-        width: rem(245);
-        align-items: center;
-        justify-content: space-between;
-        border-radius: rem(10);
-        padding: rem(10);
-        position: absolute;
-        left: 75%;
-        top: 290px;
-        &::after{
-            content: "";
-            position: absolute;
-            bottom: -14px; 
-            left: 45%;
-            transform: translateX(-50%);
-            border-bottom: 15px solid var(--share-bg);
-            border-left: 13px solid rgba(0, 0, 0, 0);
-            border-right: 13px solid rgba(0, 0, 0, 0);
-            display: inline-block;
-            height: 0;
-            vertical-align: top;
-            width: 0;
-            transform: rotate(180deg);
-        }
-    }*/
 
-    .share-wrapper {
+    .share-wrapper { 
+        // This is a parent element that contains the share button and the share container 
         width: min-content;
         height: min-content;
         background-color: var(--card-bg);
     }
 
     .share-wrapper:has(.share-btn[aria-expanded="true"]) {
+        //applies when button is clicked and expanded
         width: 100%;
         height: rem(80);
         background-color: var(--share-bg);
@@ -72,9 +48,10 @@
             background-color: var(--share-bg);
 
             &::after {
+                //the triangle below the share container
                 content: "";
                 position: absolute;
-                bottom: -14px; /* Position the pointer below the popup */
+                bottom: -14px; 
                 left: 45%;
                 transform: translateX(-50%);
                 border-bottom: 15px solid var(--share-bg);
@@ -111,6 +88,7 @@
     }
 }
 
+// with these classes you can hide and show elements with classlist.toggle in js
 .flex {
     display: flex;
 }

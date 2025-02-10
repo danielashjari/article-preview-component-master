@@ -1,4 +1,8 @@
 @use '../util' as *;
-body{
+body{  
+    min-height: 100svh;
+
+    padding: 1rem; 
+
     background-color: var(--body-bg);
 }
