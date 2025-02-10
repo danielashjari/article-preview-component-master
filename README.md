@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the desktop view](./images/Screenshot_desktop.jpeg)
-![Screenshot of the mobile view](./images/Screenshot_mobile.jpeg)
+![Screenshot of the desktop view](./images/Screenshot_desktop.png)
+![Screenshot of the mobile view](./images/Screenshot_mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://github.com/danielashjari/article-preview-component-master)
+- Live Site URL: [live site URL here](https://danielashjari.github.io/article-preview-component-master/)
 
 ## My process
 
@@ -89,4 +89,3 @@ I will do this challenge again with another format of icons, new styles and usin
 ## Author
 
 - Frontend Mentor - [@danialashjari](https://www.frontendmentor.io/profile/danialashjari)
-- Twitter - [@danialashjari](https://www.twitter.com/danialashjari)
