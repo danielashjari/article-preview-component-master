@@ -88,5 +88,5 @@ I will do this challenge again with another format of icons, new styles and usin
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@danialashjari](https://www.frontendmentor.io/profile/danialashjari)
 - Twitter - [@danialashjari](https://www.twitter.com/danialashjari)
