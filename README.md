@@ -81,7 +81,10 @@ I will do this challenge again with another format of icons, new styles and usin
 
 ### Useful resources
 
-- [Example resource 1](https://github.com/Clipzorama/Article-Preview-Component) - This is a solution of the challenge by Chrision Wynaar. 
+- [Example resource 1](https://github.com/Clipzorama/Article-Preview-Component) - This is a solution of the challenge by Chrision Wynaar.
+- [Example resource 2](https://github.com/py-code314/article-preview-component) - This is a solution of the challenge by py-code314.
+- [Article Screen reader]((https://uit.stanford.edu/accessibility/concepts/screen-reader-only-content#:~:text=First%2C%20add%20the%20following%20to%20your%20style%20sheet%2C,margin%3A%20-1px%3B%20overflow%3A%20hidden%3B%20padding%3A%200%3B%20position%3A%20absolute%3B)) - This is a article about screen reader only text on stanford uni website.
+- [Article of Aria attributes](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/WAI-ARIA_basics) This is an article about WAI-ARIA attributes.
 
 ## Author
 
