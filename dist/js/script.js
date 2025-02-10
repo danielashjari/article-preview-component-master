@@ -8,8 +8,10 @@ const profileCard = document.getElementById("profile-card");
 shareBtn.addEventListener('click', function(){
   shareContainer.classList.toggle('hidden');
   shareContainer.classList.toggle('flex');
-  profileInfo.classList.toggle('flex');
-  profileInfo.classList.toggle('hidden');
+  if(window.innerWidth < 1080){
+    profileCard.classList.toggle('hidden');
+    profileCard.classList.toggle('flex');
+  }
   
   if(shareContainer.classList.contains('flex')){
     shareBtn.setAttribute('aria-expanded', 'true');

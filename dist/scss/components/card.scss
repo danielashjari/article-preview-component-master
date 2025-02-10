@@ -24,7 +24,7 @@ main {
             }
             .card-profile {
                 @include flex(row, center);
-                justify-content: space-around;
+                justify-content: space-between;
 
                 .card-profile-info {
                     flex-direction: row;
