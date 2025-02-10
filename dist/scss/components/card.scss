@@ -1,10 +1,7 @@
 @use "../util/" as *;
 
 main {
-    margin: 6%;
-    @include flex(column, stretch);
-    flex-wrap: wrap;
-    align-content: center;
+
     .card {
         width: 100%;
         max-inline-size: rem(370);
