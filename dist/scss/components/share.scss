@@ -1,7 +1,7 @@
 @use "../util/" as *;
 
 .card-profile {
-    .pop-up {
+    /*.pop-up {
         background-color: var(--share-bg);
         width: rem(245);
         align-items: center;
@@ -14,7 +14,7 @@
         &::after{
             content: "";
             position: absolute;
-            bottom: -14px; /* Position the pointer below the popup */
+            bottom: -14px; /* Position the pointer below the popup *//*
             left: 45%;
             transform: translateX(-50%);
             border-bottom: 15px solid var(--share-bg);
@@ -26,39 +26,51 @@
             width: 0;
             transform: rotate(180deg);
         }
-    }
+    }*/
 
-    .share-container {
+    .share-wrapper{
+        width: min-content;
+        height: min-content;
+        background-color: var(--card-bg) 
+    }
+    .share-wrapper:has( .share-btn[aria-expanded='true']) {
         width: 100%;
         height: rem(80);
         background-color: var(--share-bg);
+        @include flex(row-reverse, center);
         align-items: center;
         justify-content: space-between;
-        padding: 15px 30px 15px 30px;
         border-bottom-right-radius: rem(15);
         border-bottom-left-radius: rem(15);
+        padding: 15px 30px 15px 30px;
         
-
-        .share-mobile {
-            width: 100%;
-            @include flex (row, center);
-            justify-content: space-around;
-        }
+        
+    }
+    
+    .share-container {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
 
+    .share-btn {
+        border-radius: 50%;
+        padding: rem(7);
+        background-color: var(--icon-bg);
+    }
+    
     h4 {
         font-variant: small-caps;
         color: rgb(232, 232, 232);
         margin: 0%;
     }
 
-    .share-icon {
-        border-radius: 50%;
-        padding: rem(7);
-        background-color: var(--icon-bg);
-    }
 }
 
+.flex{
+    display: flex;
+}
 .hidden {
     display: none;
 }
