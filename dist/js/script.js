@@ -1,31 +1,20 @@
-const shareIcon = document.getElementById("share-icon");
-const shareIconMobile = document.getElementById("share-icon-mobile");
+const shareBtn = document.getElementById("share-btn");
 const shareContainer = document.getElementById("share-container");
+const shareWrapper = document.getElementById("share-wrapper");
 const profileInfo = document.getElementById("profile-info");
-const desktopBar = document.getElementById("share-desktop");
+const profileCard = document.getElementById("profile-card");
 
 
-
-shareIcon.addEventListener("click", function () {
-  if (window.innerWidth > 1024) {
-    if (desktopBar.style.display === "none") {
-      desktopBar.style.display = "flex";
-    } else {
-      desktopBar.style.display = "none";
-    }
-  }
-  else if (window.innerWidth < 1024) {
-    shareContainer.style.display = "flex";
-    profileInfo.style.display = "none";
-  }
-
-})
-
-
-shareIconMobile.addEventListener("click", function () {
-  if (window.innerWidth < 1024) {
-    profileInfo.style.display = "flex";
-    shareContainer.style.display = "none";
-
+shareBtn.addEventListener('click', function(){
+  shareContainer.classList.toggle('hidden');
+  shareContainer.classList.toggle('flex');
+  profileInfo.classList.toggle('flex');
+  profileInfo.classList.toggle('hidden');
+  
+  if(shareContainer.classList.contains('flex')){
+    shareBtn.setAttribute('aria-expanded', 'true');
+  }else if(shareContainer.classList.contains('hidden')){
+    shareBtn.setAttribute('aria-expanded', 'false');
   }
 })
+
